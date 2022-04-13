@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h4{
+    font-family: "Raleway" , sans-serif ;
+    font-size: 2rem;
+}
+
+.logo img{
+     width: 100%;
+     max-height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    /* border: 1px solid red; */
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Raleway" , sans-serif ;
+    font-weight: 700;
+    font-size: 1.1rem;
+    /* border: 1px solid red; */
+}
+
+.nav-links li:not(:last-child){
+    padding-top: 1em;
+    padding-bottom: .5em;
+    border-bottom: 4px solid #4BA87D;
+}
+
+.nav-links li:last-child{
+    background-color: #4BA87D;
+    padding: .7em .9em;
+}
+
+.nav-links .sign-up-btn {
+    color: #fff;
+}
+
+@media screen and (max-width: 1500px){
+    .nav-links {
+        width: 60%;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .logo h4 {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links {
+        width: 65%;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .logo h4 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 780px){
+
+    nav ul :not(:last-child){
+        display: none;
+    }
+
+    nav {
+        justify-content: space-around;
+        /* border: 1px solid red; */
+    }
+
+    .nav-links {
+        width: 35%;
+        justify-content: flex-end;
+        margin-right: 2em;
+        /* border: 1px solid red; */
+    }
+
+}
